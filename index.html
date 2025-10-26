@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonder Print - Catálogo de Productos</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 40px 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 30px;
+      font-size: 28px;
+      letter-spacing: 0.5px;
+    }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Tarjeta */
+    .tarjeta {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-4px);
+    }
+
+    .before-after-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      background: #000;
+    }
+
+    .before-layer,
+    .after-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .before-image,
+    .after-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .after-layer {
+      clip-path: inset(0 50% 0 0);
+      transition: clip-path 0.1s ease;
+    }
+
+    /* Textos en esquinas */
+    .label-text {
+      position: absolute;
+      top: 12px;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.0);
+      user-select: none;
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    .before-label { left: 16px; clip-path: inset(0 100% 0 0); transition: clip-path 0.1s ease	}
+    .after-label { right: 16px; }
+
+    .slider {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    /* Botón */
+    .boton-modelo {
+      display: block;
+      text-align: center;
+      background: #111;
+      color: #fff;
+      font-weight: 500;
+      padding: 12px;
+      text-decoration: none;
+      border-radius: 0 0 20px 20px;
+      transition: background 0.2s ease;
+    }
+
+    .boton-modelo:hover {
+      background: #333;
+    }
+
+    /* --- Sección final --- */
+    .contacto {
+      margin-top: 80px;
+      text-align: center;
+      padding: 60px 20px;
+      background: #fff;
+      border-radius: 24px;
+      width: 90%;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .contacto h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .botones-contacto {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .boton-cta {
+      padding: 12px 24px;
+      border-radius: 12px;
+      background: #25d366;
+      color: white;
+      font-weight: 500;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .boton-cta:hover {
+      transform: translateY(-2px);
+      background: #1ebe5d;
+    }
+
+    .boton-instagram {
+      background: #e1306c;
+    }
+
+    .boton-instagram:hover {
+      background: #c12d5f;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Catálogo de Productos - Wonder Print</h1>
+
+  <div class="catalogo">
+    <!-- Tarjeta base repetida 10 veces -->
+    <!-- Modelo 1 -->
+    <div class="tarjeta">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo1_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">Encendido</div>
+        </div>
+          <img src="imagenes/modelo1_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Apagado</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+      <a href="#" class="boton-modelo">Elegir este modelo</a>
+    </div>
+
+    <!-- Copia las siguientes tarjetas y reemplaza imágenes -->
+    <div class="tarjeta">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo2_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">Encendido</div>
+        </div>
+          <img src="imagenes/modelo2_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Apagado</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider2" />
+      </div>
+      <a href="#" class="boton-modelo">Elegir este modelo</a>
+    </div>
+
+    <!-- ... repite hasta modelo10 -->
+    <div class="tarjeta">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo3_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">Encendido</div>
+        </div>
+          <img src="imagenes/modelo3_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Apagado</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider2" />
+      </div>
+      <a href="#" class="boton-modelo">Elegir este modelo</a>
+    </div>
+
+    <div class="tarjeta">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo4_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">Encendido</div>
+        </div>
+          <img src="imagenes/modelo4_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Apagado</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider2" />
+      </div>
+      <a href="#" class="boton-modelo">Elegir este modelo</a>
+    </div>
+
+    <div class="tarjeta">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo5_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">Encendido</div>
+        </div>
+          <img src="imagenes/modelo5_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Apagado</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider2" />
+      </div>
+      <a href="#" class="boton-modelo">Elegir este modelo</a>
+    </div>
+
+    <div class="tarjeta">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo6_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">Encendido</div>
+        </div>
+          <img src="imagenes/modelo6_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Apagado</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider2" />
+      </div>
+      <a href="#" class="boton-modelo">Elegir este modelo</a>
+    </div>
+
+    <div class="tarjeta">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo7_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">Encendido</div>
+        </div>
+          <img src="imagenes/modelo7_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Apagado</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider2" />
+      </div>
+      <a href="#" class="boton-modelo">Elegir este modelo</a>
+    </div>
+
+    <div class="tarjeta">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo8_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">Encendido</div>
+        </div>
+          <img src="imagenes/modelo8_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Apagado</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider2" />
+      </div>
+      <a href="#" class="boton-modelo">Elegir este modelo</a>
+    </div>
+
+    <div class="tarjeta">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo9_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">Encendido</div>
+        </div>
+          <img src="imagenes/modelo9_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Apagado</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider2" />
+      </div>
+      <a href="#" class="boton-modelo">Elegir este modelo</a>
+    </div>
+
+  <!-- Sección de contacto -->
+  <div class="contacto">
+    <h2>¿Te gustó alguno? 💡</h2>
+    <p>Habla con nosotros para tu pedido o más información:</p>
+    <div class="botones-contacto">
+      <a href="https://wa.me/51921951649" target="_blank" class="boton-cta">📱 WhatsApp</a>
+      <a href="https://instagram.com/wonder.print3d" target="_blank" class="boton-cta boton-instagram">📸 Instagram</a>
+    </div>
+  </div>
+
+  <script>
+    // Aplica el efecto a todos los sliders
+    document.querySelectorAll(".slider").forEach((slider) => {
+      const container = slider.closest(".before-after-container");
+      const afterLayer = container.querySelector(".after-layer");
+      slider.addEventListener("input", (e) => {
+        const value = e.target.value;
+        afterLayer.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+      });
+    });
+  </script>
+</body>
+</html>
