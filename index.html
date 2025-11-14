@@ -199,6 +199,31 @@
   .botones-contacto a:hover {
     opacity: 0.85;
   }
+  
+.btn-paginacion {
+  background: #ff4fb0;        /* rosa Wonder Print */
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-paginacion:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.btn-paginacion:disabled {
+  opacity: 0.4;
+  cursor: default;
+  transform: none;
+}
+
+
 </style>
 </head>
 <body>
@@ -210,7 +235,7 @@
 
   <div class="catalogo">
   <!-- Ejemplo de 1 tarjeta (repite 10 veces cambiando imágenes y nombres) -->
-    <div class="tarjeta">
+    <div class="tarjeta" data-nombre="Jinx | Chaos Unleashed">
       <div class="before-after-container">
         <div class="before-layer">
 		<div class="after-layer">
@@ -224,13 +249,13 @@
       </div>
     <div class="producto-info">
       <h3>Jinx | Chaos Unleashed</h3>
-      <a href="https://wa.me/51921951649" ?text=Hola%20Wonder%20Print!%20Quiero%20pedir%20el%20Modelo%201" class="boton-elegir" target="_blank">Elegir este modelo</a>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
     </div>
   </div>
 
   <!-- Copia y cambia los src y títulos para los otros 9 modelos -->
 
-    <div class="tarjeta">
+    <div class="tarjeta" data-nombre="Aki & Kon | Chainsaw Man">
       <div class="before-after-container">
         <div class="before-layer">
 		<div class="after-layer">
@@ -244,11 +269,11 @@
       </div>
     <div class="producto-info">
       <h3>Aki & Kon | Chainsaw Man</h3>
-      <a href="https://wa.me/51921951649" ?text=Hola%20Wonder%20Print!%20Quiero%20pedir%20el%20Modelo%201" class="boton-elegir" target="_blank">Elegir este modelo</a>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
     </div>
    </div>
 
-    <div class="tarjeta">
+    <div class="tarjeta" data-nombre="Cat Dreaming of Butterflies">
       <div class="before-after-container">
         <div class="before-layer">
 		<div class="after-layer">
@@ -262,11 +287,11 @@
       </div>
     <div class="producto-info">
       <h3>Cat Dreaming of Butterflies</h3>
-      <a href="https://wa.me/51921951649" ?text=Hola%20Wonder%20Print!%20Quiero%20pedir%20el%20Modelo%201" class="boton-elegir" target="_blank">Elegir este modelo</a>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
     </div>
   </div>
 
-    <div class="tarjeta">
+    <div class="tarjeta" data-nombre="Calles de japon purpura">
       <div class="before-after-container">
         <div class="before-layer">
 		<div class="after-layer">
@@ -280,11 +305,11 @@
       </div>
     <div class="producto-info">
       <h3>Calles de japon purpura</h3>
-      <a href="https://wa.me/51921951649" ?text=Hola%20Wonder%20Print!%20Quiero%20pedir%20el%20Modelo%201" class="boton-elegir" target="_blank">Elegir este modelo</a>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
     </div>
   </div>
 
-    <div class="tarjeta">
+    <div class="tarjeta" data-nombre="Mayday + Peter Parker">
       <div class="before-after-container">
         <div class="before-layer">
 		<div class="after-layer">
@@ -298,11 +323,11 @@
       </div>
     <div class="producto-info">
       <h3>Mayday + Peter Parker</h3>
-      <a href="https://wa.me/51921951649" ?text=Hola%20Wonder%20Print!%20Quiero%20pedir%20el%20Modelo%201" class="boton-elegir" target="_blank">Elegir este modelo</a>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
     </div>
   </div>
 
-    <div class="tarjeta">
+    <div class="tarjeta" data-nombre="Zenitsu Thunder| Demon Slayer">
       <div class="before-after-container">
         <div class="before-layer">
 		<div class="after-layer">
@@ -316,11 +341,11 @@
       </div>
     <div class="producto-info">
       <h3>Zenitsu Thunder| Demon Slayer</h3>
-      <a href="https://wa.me/51921951649" ?text=Hola%20Wonder%20Print!%20Quiero%20pedir%20el%20Modelo%201" class="boton-elegir" target="_blank">Elegir este modelo</a>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
     </div>
   </div>
 
-    <div class="tarjeta">
+    <div class="tarjeta" data-nombre="Boy & The City | Your Name">
       <div class="before-after-container">
         <div class="before-layer">
 		<div class="after-layer">
@@ -334,11 +359,11 @@
       </div>
     <div class="producto-info">
       <h3>Boy & The City | Your Name</h3>
-      <a href="https://wa.me/51921951649" ?text=Hola%20Wonder%20Print!%20Quiero%20pedir%20el%20Modelo%201" class="boton-elegir" target="_blank">Elegir este modelo</a>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
     </div>
   </div>
 
-    <div class="tarjeta">
+    <div class="tarjeta" data-nombre="Kamado Nezuko | Demon Slayer">
       <div class="before-after-container">
         <div class="before-layer">
 		<div class="after-layer">
@@ -352,11 +377,11 @@
       </div>
     <div class="producto-info">
       <h3>Kamado Nezuko | Demon Slayer</h3>
-      <a href="https://wa.me/51921951649" ?text=Hola%20Wonder%20Print!%20Quiero%20pedir%20el%20Modelo%201" class="boton-elegir" target="_blank">Elegir este modelo</a>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
     </div>
   </div>
 
-    <div class="tarjeta">
+    <div class="tarjeta" data-nombre="Kyojuro Rengoku | Demon Slayer">
       <div class="before-after-container">
         <div class="before-layer">
 		<div class="after-layer">
@@ -370,11 +395,213 @@
       </div>
     <div class="producto-info">
       <h3>Kyojuro Rengoku | Demon Slayer</h3>
-      <a href="https://wa.me/51921951649" ?text=Hola%20Wonder%20Print!%20Quiero%20pedir%20el%20Modelo%201" class="boton-elegir" target="_blank">Elegir este modelo</a>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Levi | AOT">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo10_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo10_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Levi | AOT</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Moon | Cyberpunk">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo11_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo11_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Moon | Cyberpunk</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+
+    <div class="tarjeta" data-nombre="Sky Field | Your Name">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo12_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo12_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Sky Field | Your Name</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Stairs of Destiny | Your Name">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo13_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo13_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Stairs of Destiny | Your Name</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Gojo & Geto | JJK">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo14_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo14_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Gojo & Geto | JJK</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Friends to Enemies | JJK">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo15_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo15_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Friends to Enemies | JJK</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Gojo Purple | JJK">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo16_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo16_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Gojo Purple | JJK</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Goku | DBZ">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo17_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo17_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Goku | DBZ</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="RX-78 | Gundam Mobile Suit">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo18_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo18_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>RX-78 | Gundam Mobile Suit</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Levi Titan | AOT">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo19_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo19_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Levi Titan | AOT</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Luffy Wanted Poster | One Piece">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo20_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo20_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Luffy Wanted Poster | One Piece</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
     </div>
   </div>
 
 <!-- Sección final -->
+
+<button id="btnAnterior" class="btn-paginacion" onclick="mostrarPagina(paginaActual - 1)" style="display:none;">← Página anterior</button>
+<button id="btnSiguiente" class="btn-paginacion" onclick="mostrarPagina(paginaActual + 1)">Página siguiente →</button>
+
 <section class="contacto">
   <h2>¿Te gustó alguno? 💡</h2>
   <p>Habla con nosotros para hacer tu pedido o resolver tus dudas</p>
@@ -395,6 +622,46 @@
         afterLayer.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
     });
   });
+  
+
+  const tarjetas = document.querySelectorAll('.tarjeta');
+  const porPagina = 15;
+  let paginaActual = 1;
+
+  function mostrarPagina(n) {
+    if (n < 1) return;
+    const totalPaginas = Math.ceil(tarjetas.length / porPagina);
+    if (n > totalPaginas) return;
+
+    paginaActual = n;
+
+    const inicio = (n - 1) * porPagina;
+    const fin = inicio + porPagina;
+
+    tarjetas.forEach((t, i) => {
+      t.style.display = (i >= inicio && i < fin) ? 'block' : 'none';
+    });
+
+    // mostrar u ocultar botones según la página actual
+    document.getElementById("btnAnterior").style.display = (n > 1) ? "inline-block" : "none";
+    document.getElementById("btnSiguiente").style.display = (n < totalPaginas) ? "inline-block" : "none";
+  }
+
+  mostrarPagina(1);
+document.querySelectorAll(".btn-wp").forEach(boton => {
+  boton.addEventListener("click", e => {
+    e.preventDefault();
+    const tarjeta = e.target.closest(".tarjeta");
+    const nombre = tarjeta.dataset.nombre;
+    const numero = "51921951649"; // ← coloca tu número real aquí
+
+    const mensaje = `Hola Wonder Print, quiero pedir este modelo: ${nombre}`;
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+    window.open(url, "_blank");
+  });
+});
+
 </script>
 </body>
 </html>
