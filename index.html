@@ -224,16 +224,44 @@
 }
 
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Asegura que la imagen oculta NO ocupe espacio */
+header img {
+  display: none;
+  max-width: 180px;   /* ajusta si quieres más grande o más pequeño */
+}
+
+/* Escritorio → logo rosa */
+@media (min-width: 769px) {
+  header .logo-claro {
+    display: block;
+  }
+}
+
+/* Móvil → logo amarillo */
+@media (max-width: 768px) {
+  header .logo-oscuro {
+    display: block;
+  }
+}
+
 </style>
 </head>
 <body>
 
 <header>
   <!-- 🔄 Reemplaza la ruta con tu logo -->
-  <img src="LOGO-WONDER.png" alt="Wonder Print Logo">
+  <img src="LOGO-WONDER2.png" class="logo-claro" alt="Wonder Print Logo">
+  <img src="LOGO-WONDER.png" class="logo-oscuro" alt="Wonder Print Logo">
 </header>
 
-  <div class="catalogo">
+<div class="catalogo">
   <!-- Ejemplo de 1 tarjeta (repite 10 veces cambiando imágenes y nombres) -->
     <div class="tarjeta" data-nombre="Jinx | Chaos Unleashed">
       <div class="before-after-container">
@@ -593,6 +621,168 @@
       </div>
     <div class="producto-info">
       <h3>Luffy Wanted Poster | One Piece</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Madara Susanoo | Naruto">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo21_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo21_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Madara Susanoo | Naruto</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Mikasa & Eren's Dream | AOT">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo22_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo22_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Mikasa & Eren's Dream | AOT</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Naruto & Kurama | Naruto">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo23_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo23_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Naruto & Kurama | Naruto</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Luffy Past & Present | One Piece">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo24_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo24_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Luffy Past & Present | One Piece</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Haku & Chihiro | Spirited Away">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo25_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo25_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Haku & Chihiro | Spirited Away</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Spirit of Fire | Demon Slayer">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo26_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo26_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Spirit of Fire | Demon Slayer</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="City & Sky | Your Name">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo27_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo27_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>City & Sky | Your Name</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Zenitsu | Demon Slayer">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo28_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo28_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Zenitsu | Demon Slayer</h3>
+      <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
+    </div>
+  </div>
+  
+    <div class="tarjeta" data-nombre="Zoro | One Piece">
+      <div class="before-after-container">
+        <div class="before-layer">
+		<div class="after-layer">
+          <img src="imagenes/modelo29_on.jpg" alt="Después" class="after-image" />
+          <div class="label-text after-label">On</div>
+        </div>
+          <img src="imagenes/modelo29_off.jpg" alt="Antes" class="before-image" />
+          <div class="label-text before-label">Off</div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" />
+      </div>
+    <div class="producto-info">
+      <h3>Zoro | One Piece</h3>
       <a href="#" class="boton-elegir btn-wp">Elegir este modelo</a>
     </div>
   </div>
